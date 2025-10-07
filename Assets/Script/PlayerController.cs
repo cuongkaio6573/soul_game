@@ -29,7 +29,7 @@ public class PlayerController : MonoBehaviour
     }
     void Move()
     {
-        rb.linearVelocity = new Vector2(moveDirection.x * speed, moveDirection.y * speed);
+        rb.velocity = new Vector2(moveDirection.x * speed, moveDirection.y * speed);
     }
     void Sprint()
     {
